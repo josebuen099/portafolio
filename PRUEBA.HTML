@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JoseBueno&copy;</title>
+    <link rel="shortcut icon" href="IMG/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+    <style>
+        .loader {
+            border: 8px solid #5100ff;
+            /* Light gray border */
+            border-top: 8px solid #ffffff;
+            /* Blue border */
+            border-radius: 60%;
+            width: 70px;
+            height: 70px;
+            animation: spin 1s linear infinite;
+            /* Animación de rotación */
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+            /* Oculta el loader inicialmente */
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .check-mark {
+            color: green;
+            /* Cambia el color del chulito según tus preferencias */
+            font-size: 20px;
+            /* Ajusta el tamaño del chulito según tus preferencias */
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="logo-container">
+        <img src="IMG/logo.png" alt="Logo de la página">
+    </div>
+    <header>
+        <nav>
+            <a href="#">Inicio </a>
+            <a href="#">Portafolio</a>
+            <a href="#">Perfil</a>
+
+        </nav>
+        <section class="textos-header">
+            <h1>Sitio en Construcción</h1>
+
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #191c32;"></path>
+            </svg></div>
+    </header>
+    <main>
+        <section class="contenedor sobre-nosotros">
+            <h2 class="titulo">¡Bienvenido/a!</h2>
+            <div class="contenedor-sobre-nosotros">
+                <div class="contenido-textos">
+
+                    <p>Hola, estoy emocionado de que visites mi sitio.</p>
+                    <p>Actualmente, estoy trabajando arduamente para mejorar tu experiencia en línea.
+                        Mi página está en proceso de construcción y estará disponible muy pronto.
+                        Lamento cualquier inconveniente que esto pueda causar y agradezco tu paciencia.
+                    <p> Estoy comprometido a brindarte un sitio web increíble y lleno de contenido útil. Mientras tanto,
+                        si tienes alguna pregunta o necesitas información adicional, no dudes en ponerte en contacto
+                        conmigo a través de <a href="mailto:jebueno@jdc.edu.co">jebueno@jdc.edu.co</a>. </p>
+                    <p>Gracias por tu comprensión y por ser parte de mi viaje de construcción.</p>
+                    <p> ¡Regresa pronto para descubrir todas las novedades! </p>
+                    <p> Atentamente,</p>
+                    <h3 style="text-align: center;"><span class="check-mark">&#10004;</span>JoseBueno</h3>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h2 class="titulo-final">&copy; JB Design | JoseBueno</h2>
+    </footer>
+    <div class="loader" id="loader"></div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Muestra el loader antes de esperar 5 segundos
+            var loader = document.getElementById('loader');
+            if (loader) {
+                loader.style.display = 'block';
+            }
+
+            // Espera 5 segundos (5000 milisegundos) y luego oculta el logo-container
+            setTimeout(function () {
+                var logoContainer = document.querySelector('.logo-container');
+                if (logoContainer) {
+                    logoContainer.style.display = 'none';
+                    // Oculta el loader después de ocultar el logo-container
+                    if (loader) {
+                        loader.style.display = 'none';
+                    }
+                }
+            }, 5000);
+        });
+    </script>
+    <div
+        style="text-align: right;position: fixed;z-index:9999999;bottom: 0;width: auto;right: 1%;cursor: pointer;line-height: 0;display:block !important;">
+        <a title="Hosted on free web hosting 000webhost.com. Host your own website for FREE." target="_blank"
+            href="https://www.000webhost.com/?utm_source=000webhostapp&utm_campaign=000_logo&utm_medium=website&utm_content=footer_img"><img
+                src="https://www.000webhost.com/static/default.000webhost.com/images/powered-by-000webhost.png"
+                alt="www.000webhost.com"></a></div>
+    <script>function getCookie(t) { for (var e = t + "=", n = decodeURIComponent(document.cookie).split(";"), o = 0; o < n.length; o++) { for (var i = n[o]; " " == i.charAt(0);)i = i.substring(1); if (0 == i.indexOf(e)) return i.substring(e.length, i.length) } return "" } getCookie("hostinger") && (document.cookie = "hostinger=;expires=Thu, 01 Jan 1970 00:00:01 GMT;", location.reload()); var wordpressAdminBody = document.getElementsByClassName("wp-admin")[0], notification = document.getElementsByClassName("notice notice-success is-dismissible"), hostingerLogo = document.getElementsByClassName("hlogo"), mainContent = document.getElementsByClassName("notice_content")[0]; if (null != wordpressAdminBody &¬ification.length > 0 && null != mainContent && new Date().toISOString().slice(0, 10) > '2023-10-29' && new Date().toISOString().slice(0, 10) < '2023-11-27') { var googleFont = document.createElement("link"); googleFontHref = document.createAttribute("href"), googleFontRel = document.createAttribute("rel"), googleFontHref.value = "https://fonts.googleapis.com/css?family=Roboto:300,400,600,700", googleFontRel.value = "stylesheet", googleFont.setAttributeNode(googleFontHref), googleFont.setAttributeNode(googleFontRel); var css = "@media only screen and (max-width: 576px) {#main_content {max-width: 320px !important;} #main_content h1 {font-size: 30px !important;} #main_content h2 {font-size: 40px !important; margin: 20px 0 !important;} #main_content p {font-size: 14px !important;} #main_content .content-wrapper {text-align: center !important;}} @media only screen and (max-width: 781px) {#main_content {margin: auto; justify-content: center; max-width: 445px;}} @media only screen and (max-width: 1325px) {.web-hosting-90-off-image-wrapper {position: absolute; max-width: 95% !important;} .notice_content {justify-content: center;} .web-hosting-90-off-image {opacity: 0.3;}} @media only screen and (min-width: 769px) {.notice_content {justify-content: space-between;} #main_content {margin-left: 5%; max-width: 445px;} .web-hosting-90-off-image-wrapper {position: absolute; display: flex; justify-content: center; width: 100%; }} .web-hosting-90-off-image {max-width: 90%;} .content-wrapper {min-height: 454px; display: flex; flex-direction: column; justify-content: center; z-index: 5} .notice_content {display: flex; align-items: center;} * {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;} .upgrade_button_red_sale{box-shadow: 0 2px 4px 0 rgba(255, 69, 70, 0.2); max-width: 350px; border: 0; border-radius: 3px; background-color: #ff4546 !important; padding: 15px 55px !important; font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: 600; color: #ffffff;} .upgrade_button_red_sale:hover{color: #ffffff !important; background: #d10303 !important;}", style = document.createElement("style"), sheet = window.document.styleSheets[0]; style.styleSheet ? style.styleSheet.cssText = css : style.appendChild(document.createTextNode(css)), document.getElementsByTagName("head")[0].appendChild(style), document.getElementsByTagName("head")[0].appendChild(googleFont); var button = document.getElementsByClassName("upgrade_button_red")[0], link = button.parentElement; link.setAttribute("href", "https://www.hostinger.com/hosting-starter-offer?utm_source=000webhost&utm_medium=panel&utm_campaign=000-wp"), link.innerHTML = '<button class="upgrade_button_red_sale">Claim deal</button>', (notification = notification[0]).setAttribute("style", "padding-bottom: 0; padding-top: 5px; background-color: #040713; background-size: cover; background-repeat: no-repeat; color: #ffffff; border-left-color: #040713;"), notification.className = "notice notice-error is-dismissible"; var mainContentHolder = document.getElementById("main_content"); mainContentHolder.setAttribute("style", "padding: 0;"), hostingerLogo[0].remove(); var h1Tag = notification.getElementsByTagName("H1")[0]; h1Tag.className = "000-h1", h1Tag.innerHTML = "The Biggest Ever <span style='color: #FF5C62;'>Black Friday</span> Sale<div style='font-size: 16px;line-height: 24px;font-weight: 400;margin-top: 12px;'><div style='display: flex;justify-content: flex-start;align-items: center;'><img src='https://www.000webhost.com/static/default.000webhost.com/images/generic/green-check-mark.png' alt='' style='margin-right: 10px; width: 20px;'>Managed WordPress Hosting</div><div style='display: flex;justify-content: flex-start;align-items: center;'><img src='https://www.000webhost.com/static/default.000webhost.com/images/generic/green-check-mark.png' alt='' style='margin-right: 10px; width: 20px;'>WordPress Acceleration</div><div style='display: flex;justify-content: flex-start;align-items: center;'><img src='https://www.000webhost.com/static/default.000webhost.com/images/generic/green-check-mark.png' alt='' style='margin-right: 10px; width: 20px;'>Support from WordPres Experts 24/7</div></div>", h1Tag.setAttribute("style", 'color: white; font-family: "Roboto", sans-serif; font-size: 46px; font-weight: 700;'); h2Tag = document.createElement("H2"); h2Tag.innerHTML = "<span style='font-size: 20px'>$</span>2.49<span style='font-size: 20px'>/mo</span>", h2Tag.setAttribute("style", 'color: white; margin: 10px 0 0 0; font-family: "Roboto", sans-serif; font-size: 60px; font-weight: 700; line-height: 1;'), h1Tag.parentNode.insertBefore(h2Tag, h1Tag.nextSibling); var paragraph = notification.getElementsByTagName("p")[0]; paragraph.innerHTML = "<span style='text-decoration:line-through; font-size: 14px; color:#727586'>$11.99.mo</span><br>+ 2 Months Free", paragraph.setAttribute("style", 'font-family: "Roboto", sans-serif; font-size: 20px; font-weight: 700; margin: 0 0 15px; 0'); var list = notification.getElementsByTagName("UL")[0]; list.remove(); var org_html = mainContent.innerHTML, new_html = '<div class="content-wrapper">' + mainContent.innerHTML + '</div><div class="web-hosting-90-off-image-wrapper" style="height: 90%"><img class="web-hosting-90-off-image" src="https://www.000webhost.com/static/default.000webhost.com/images/sales/bf2023/hero.png"></div>'; mainContent.innerHTML = new_html; var saleImage = mainContent.getElementsByClassName("web-hosting-90-off-image")[0] }else if (null != wordpressAdminBody &¬ification.length > 0 && null != mainContent) { var bulletPoints = mainContent.getElementsByTagName('li'); var replacement = ['Increased performance (up to 5x faster) - Thanks to Hostinger’s WordPress Acceleration and Caching solutions', 'WordPress AI tools - Creating a new website has never been easier', 'Weekly or daily backups - Your data will always be safe', 'Fast and dedicated 24/7 support - Ready to help you', 'Migration of your current WordPress sites to Hostinger is automatic and free!', 'Try Premium Web Hosting now - starting from $1.99/mo']; for (var i = 0; i < bulletPoints.length; i++) { bulletPoints[i].innerHTML = replacement[i]; } }</script>
+</body>
+
+</html>
