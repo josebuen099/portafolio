@@ -219,11 +219,13 @@ header {
 }
 
 .card__proyect-links a {
+    
     color: #fff;
     text-decoration: none;
 }
 
 .card__proyect-links i {
+       
     font-size: 1.5em;
 }
 
@@ -321,7 +323,7 @@ header {
 }
 
 .portfolio .container {
-    width: auto;
+    width: max-content;
     height: auto;
    
     display: list-item;
@@ -334,7 +336,12 @@ header {
     justify-content: center;
 
 }
-
+.card {
+    width: 300px;
+    height: 400PX;
+    background-color: #2b3058;
+    margin: 1em;
+}
   
 }
 
