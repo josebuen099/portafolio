@@ -177,17 +177,21 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 
 }
 
 
 .portfolio-heading h2,
 .contact-heading h2 {
+    align-items: center;
+   
     font-size: 2em;
     color: #fff;
 }
 
 .portfolio .container {
+    list-style-type: none; /* Agrega esta línea para quitar los marcadores de lista */
     width: 80vw;
     height: 80vh;
     margin: 0 auto;
@@ -197,6 +201,7 @@ header {
 }
 
 .card {
+    list-style-type: none; /* Agrega esta línea para quitar los marcadores de lista */
     width: 300px;
     background-color: #2b3058;
     margin: 1em;
@@ -212,6 +217,7 @@ header {
 .card__title {
     padding: 20px;
 }
+
 
 .card__proyect-links {
     display: flex;
@@ -341,6 +347,15 @@ header {
     height: 400PX;
     background-color: #2b3058;
     margin: 1em;
+}
+.portfolio-heading {
+ 
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none; /* Agrega esta línea para quitar los marcadores de lista */
+
 }
   
 }
