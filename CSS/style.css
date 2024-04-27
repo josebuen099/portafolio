@@ -262,20 +262,21 @@ header {
           color: #fff;
       }
     .menu {
-        
+        flex-direction: column; /* Cambia la dirección de los elementos a columna */
+        list-style: none;
         margin-top: 20px; /* Añade espacio entre el logotipo y los elementos de menú */
         
     }
-    .menu li {
-        margin-right: 25px; /* Agrega un espacio entre los elementos del menú */
+    .menu li {  
+        margin-right: 10px; /* Agrega un espacio entre los elementos del menú */
   
     }
     .menu a {
         
       
-        padding: 0px;
+        padding: 10px;
        
-        font-size:small   ;
+        font-size:large   ;
         
     }
    
