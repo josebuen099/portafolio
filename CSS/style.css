@@ -317,7 +317,11 @@ header {
     cursor: pointer;
     transition: background-color 0.8s; /* Agrega una transición suave al color de fondo */
 }
-
+.centro {
+    font-weight:bold;
+    text-align: justify;
+    font-size: larger;
+}
 
 /* Media query para pantallas pequeñas */
 @media screen and (max-width: 768px) {
