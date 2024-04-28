@@ -320,11 +320,17 @@ header {
 .centro {
     font-weight:bold;
     text-align: justify;
-    font-size:small;
+    font-size:larger;
 }
+
 
 /* Media query para pantallas pequeñas */
 @media screen and (max-width: 768px) {
+    .centro {
+        font-weight:bold;
+        text-align: justify;
+        font-size:small;
+    }
     /* Cambios en la barra de navegación para pantallas pequeñas */
     .navbar {
         flex-direction: column; /* Cambia la dirección de los elementos a columna */
