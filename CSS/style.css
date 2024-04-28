@@ -67,11 +67,13 @@ header {
 
 
 .menu li a:hover {
+    
     color: #fff;
 }
 
 /* Estilos para el logotipo */
 .brand img {
+    
     
     display: flex;
     width: 100px;
@@ -97,6 +99,7 @@ header {
 
 }
 .info-content p{
+    animation-name:flip;
     text-align: justify;
     
 }
@@ -246,6 +249,64 @@ header {
     color: #191c32;
 }
 
+.contact-section {
+  
+    padding: 3em;
+}
+
+.container-contact {
+    margin:0 auto;
+    margin-left: 200px;
+    
+    display: flex;
+    align-items: center;
+}
+
+.contact-section img {
+    width: 350px;
+    height: 450px;
+    bottom: 0px;
+}
+
+.form-group {
+    
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    margin-top: 2em;
+}
+
+.form-group textarea {
+    height: 150px;
+    padding: 1.5em;
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.form-group .input {
+    padding: 10px 20px;
+    margin-bottom: 1em;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+
+.form-group .btn-submit {
+   
+    text-transform: uppercase;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.8s; /* Agrega una transición suave al color de fondo */
+}
+
+
 /* Media query para pantallas pequeñas */
 @media screen and (max-width: 768px) {
     /* Cambios en la barra de navegación para pantallas pequeñas */
@@ -253,6 +314,7 @@ header {
         flex-direction: column; /* Cambia la dirección de los elementos a columna */
         align-items: center; /* Centra los elementos */
     }
+   
     .wrapper{
    
         height: auto;
@@ -362,6 +424,25 @@ header {
     list-style-type: none; /* Agrega esta línea para quitar los marcadores de lista */
 
 }
+
+.container-contact {
+   
+    margin:0 auto;
+    display: flex;
+    flex-direction: column; /* Cambia la dirección de los elementos a columna en dispositivos pequeños */
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+.contact-section img {
+    max-width: 100%; /* Ajusta el ancho máximo de la imagen al tamaño del contenedor */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+    margin-bottom: 20px; /* Añade un margen inferior para separar la imagen del formulario */
+}
+
+.form-group {
+    width: 80%; /* Reduce el ancho del formulario para que quepa en dispositivos pequeños */
+}
+
   
 }
 
