@@ -320,7 +320,7 @@ header {
 .centro {
     font-weight:bold;
     text-align: justify;
-    font-size: larger;
+    font-size:small;
 }
 
 /* Media query para pantallas pequeñas */
