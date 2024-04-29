@@ -182,6 +182,7 @@ header {
 }
 
 .portfolio-heading {
+    margin-left: 60px;
     width: auto;
     display: flex;
     flex-direction: column;
@@ -326,11 +327,7 @@ header {
 
 /* Media query para pantallas pequeñas */
 @media screen and (max-width: 768px) {
-    .centro {
-        font-weight:bold;
-        text-align: justify;
-        font-size:small;
-    }
+   
     /* Cambios en la barra de navegación para pantallas pequeñas */
     .navbar {
         flex-direction: column; /* Cambia la dirección de los elementos a columna */
@@ -424,13 +421,7 @@ header {
     display: list-item;
    
 }
-.portfolio-heading {
-    width: auto;
-    display: list-item;
-   align-items: center;
-    justify-content: center;
 
-}
 .card {
     width: 300px;
     height: 400PX;
@@ -438,11 +429,10 @@ header {
     margin: 1em;
 }
 .portfolio-heading {
- 
+    margin-left: 50px;
     width: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     list-style-type: none; /* Agrega esta línea para quitar los marcadores de lista */
 
 }
@@ -465,7 +455,11 @@ header {
     justify-content: start;
     width: 100%; /* Reduce el ancho del formulario para que quepa en dispositivos pequeños */
 }
-
+.centro {
+    font-weight:bold;
+    text-align: justify;
+    font-size:small;
+}
   
 }
 
