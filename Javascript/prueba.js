@@ -1,4 +1,0 @@
-function sumar(){
-    numero
-    
-}
